@@ -1,0 +1,15 @@
+body {
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+h1 {
+  font-size: 1.125rem;
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+.redirect {
+  margin-bottom: 1rem;
+}
+input {
+  margin: 0.5rem 0;
+}

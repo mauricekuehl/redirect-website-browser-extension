@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>List of active redirects</h1>
+    <div class="redirects"></div>
+    <hr />
+    <form action="#">
+      <label for="from">String to match in Url</label>
+      <input
+        type="text"
+        name="from"
+        id="from"
+        placeholder="google.com"
+        required
+      />
+      <br />
+      <label for="to">Url to forward to</label>
+      <input
+        type="url"
+        name="to"
+        id="to"
+        placeholder="https://duckduckgo.com"
+        required
+      />
+      <br />
+      <input type="checkbox" name="path" id="path" checked />
+      <label for="path"
+        >Should keep the path
+        <span style="white-space: nowrap">(i.e. /watch)</span></label
+      >
+      <br />
+      <input type="checkbox" name="search" id="search" checked />
+      <label for="search"
+        >Should keep the search query
+        <span style="white-space: nowrap">(i.e. ?v=dQw4w9)</span></label
+      >
+      <br />
+      <input type="submit" value="add" />
+    </form>
+    <script src="popup.js"></script>
+  </body>
+</html>
